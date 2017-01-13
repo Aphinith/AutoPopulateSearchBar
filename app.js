@@ -13,7 +13,7 @@ $(document).ready(function() {
       $(".search-bar-input").val(title);
       $(".autopopulated-results").empty().css({"border": "0"});
       $.get('https://api.viki.io/v4/search.json?c='+title+'&per_page=5&with_people=true&app=100266a&t=1440586215', function(data) {
-        console.log('this is data: ', data);
+        showResults(data);
       });
     };
 
@@ -32,6 +32,21 @@ $(document).ready(function() {
         selectedTitle(movieTitle);
       });
     };
+
+    function showResults(data) {
+      $(".search-results").empty();
+      // console.log('data: ', data);
+      for (var i = 0; i < data.length; i++) {
+        var movie = data[i];
+        // console.log('this is movie: ', movie);
+        var movieTitle = movie.tt;
+        var movieImage = movie.i;
+        // console.log('movieTitle: ', movieTitle);
+        // console.log('movieImage: ', movieImage);
+        $(".search-results").append("<div>"+movieTitle+"</div class='testing'>");
+        $(".search-results").append("<img src="+movieImage+"height='300px' width='300px'>");
+      }
+    }
 
     // create get request from viki api, get titles, call function to populate titles
     $.get('https://api.viki.io/v4/search.json?c='+inputValue+'&per_page=5&with_people=true&app=100266a&t=1440586215', function(data) {

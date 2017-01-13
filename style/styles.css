@@ -39,4 +39,13 @@ body {
   padding-top: 5px;
   font-size: 12px;
   border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-results {
+  margin-left: 30px;
+}
+
+.image-file {
+  margin-bottom: 10px;
 }
