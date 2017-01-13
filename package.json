@@ -1,0 +1,19 @@
+{
+  "name": "autopopulatesearchbar",
+  "version": "1.0.0",
+  "description": "Search bar with autocomplete ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aphinith/AutoPopulateSearchBar.git"
+  },
+  "author": "Aralya Phinith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aphinith/AutoPopulateSearchBar/issues"
+  },
+  "homepage": "https://github.com/Aphinith/AutoPopulateSearchBar#readme"
+}
