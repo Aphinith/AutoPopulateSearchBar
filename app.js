@@ -27,6 +27,7 @@ $(document).ready(function() {
 
   // render results from search 
   function showResults(data) {
+    $(".autopopulated-results").empty().css({"border": "0"});
     $(".search-results").empty();
     for (var i = 0; i < data.length; i++) {
       var movie = data[i];
@@ -41,7 +42,7 @@ $(document).ready(function() {
 
   // create event handler to handle input values upon typing
   $(".search-bar").keyup(function(e) {
-    var inputValue = $(".search-bar-input").val().toString();
+    var inputValue = $(".search-bar-input").val();
     
     // remove autopopulate div border when nothing is in search bar
     if (!inputValue) {
@@ -62,8 +63,21 @@ $(document).ready(function() {
   $(".search-button").click(function(e) {
     var movieTitle = $(".search-bar-input").val();
     selectedTitle(movieTitle);
-  })
+  });
 
-})
+  $(document).keypress(function(e) {
+    if (e.which == 13) {
+      var movieTitle = $(".search-bar-input").val();
+      if (!movieTitle) {
+        return;
+      } else {
+        selectedTitle(movieTitle);
+      };
+    };
+  });
+
+});
+
+
 
 // https://api.viki.io/v4/search.json?c=boys&per_page=5&with_people=true&app=100266a&t=1440586215
