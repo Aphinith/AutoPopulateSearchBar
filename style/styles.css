@@ -1,11 +1,11 @@
 .search-bar {
-  margin: 30px auto 0px auto;
-  width: 600px;
+  margin: 30px 0 0 30px;
+  width: 400px;
   height: 25px;
 }
 
 .search-bar-input {
-  width: 600px;
+  width: 400px;
   height: 25px;
 }
 
@@ -14,8 +14,12 @@
 }
 
 .autopopulated-results {
-  width: 100px;
+  width: 400px;
   height: 100px;
-  border: 1px solid black;
-  margin-left: 331px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.testing:hover {
+  background-color: red;
 }
