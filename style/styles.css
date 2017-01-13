@@ -1,5 +1,21 @@
+.search-bar {
+  margin: 30px auto 0px auto;
+  width: 600px;
+  height: 25px;
+}
+
+.search-bar-input {
+  width: 600px;
+  height: 25px;
+}
+
+.search-bar-input:focus {
+  outline: none;
+}
+
 .autopopulated-results {
   width: 100px;
   height: 100px;
   border: 1px solid black;
+  margin-left: 331px;
 }
