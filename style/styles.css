@@ -1,3 +1,7 @@
+body {
+  font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+
 .search-bar {
   margin: 30px 0 0 30px;
   width: 400px;
@@ -7,6 +11,7 @@
 .search-bar-input {
   width: 400px;
   height: 25px;
+  font-size: 16px;
 }
 
 .search-bar-input:focus {
@@ -14,12 +19,12 @@
 }
 
 .autopopulated-results {
-  width: 400px;
+  width: 403px;
   height: 100px;
   margin-left: 30px;
   margin-top: 5px;
 }
 
-.testing:hover {
-  background-color: red;
+.hover-change:hover {
+  background-color: rgba(128, 128, 128, 0.51);
 }
