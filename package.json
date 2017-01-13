@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aphinith/AutoPopulateSearchBar/issues"
   },
-  "homepage": "https://github.com/Aphinith/AutoPopulateSearchBar#readme"
+  "homepage": "https://github.com/Aphinith/AutoPopulateSearchBar#readme",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
 }
