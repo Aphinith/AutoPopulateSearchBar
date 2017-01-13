@@ -43,8 +43,10 @@ $(document).ready(function() {
         var movieImage = movie.i;
         // console.log('movieTitle: ', movieTitle);
         // console.log('movieImage: ', movieImage);
-        $(".search-results").append("<div>"+movieTitle+"</div class='testing'>");
+        $(".search-results").append("<div>"+movieTitle+"</div>");
+        $(".search-results > div").addClass("movie-title");
         $(".search-results").append("<img src="+movieImage+"height='300px' width='300px'>");
+        $("img").addClass("image-file");
       }
     }
 
