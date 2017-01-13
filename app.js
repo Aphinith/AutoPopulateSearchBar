@@ -71,13 +71,11 @@ $(document).ready(function() {
       if (!movieTitle) {
         return;
       } else {
+        $(".autopopulated-results").empty().css({"border": "0"});
         selectedTitle(movieTitle);
       };
     };
+    
   });
 
 });
-
-
-
-// https://api.viki.io/v4/search.json?c=boys&per_page=5&with_people=true&app=100266a&t=1440586215
